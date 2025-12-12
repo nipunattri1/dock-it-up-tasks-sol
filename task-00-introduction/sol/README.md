@@ -27,7 +27,7 @@ docker network create webnet
 ### Run nginx container on that network
 ```
 docker build -t ngx .
-docker run -d --name ngx-cnt -p 8080:80 --network webnet
+docker run -d --name ngx-cnt -p 8080:80 --network webnet ngx
 ```
 
 ### Run and test the webserver
